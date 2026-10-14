@@ -38,22 +38,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label1.Location = new System.Drawing.Point(280, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.Size = new System.Drawing.Size(255, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Municipal Services";
+            this.label1.Text = "Overstrand Municipal Services App";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.OrangeRed;
             this.btnExit.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(42, 356);
+            this.btnExit.Location = new System.Drawing.Point(94, 368);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(131, 36);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "EXIT";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label2
@@ -61,7 +65,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(91, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.Size = new System.Drawing.Size(153, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Select a service below:";
             // 
@@ -75,23 +79,25 @@
             "Service Request Status"});
             this.cmbServices.Location = new System.Drawing.Point(94, 126);
             this.cmbServices.Name = "cmbServices";
-            this.cmbServices.Size = new System.Drawing.Size(262, 24);
+            this.cmbServices.Size = new System.Drawing.Size(262, 28);
             this.cmbServices.TabIndex = 3;
             // 
             // btnGo
             // 
-            this.btnGo.Location = new System.Drawing.Point(389, 126);
+            this.btnGo.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnGo.Location = new System.Drawing.Point(412, 119);
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(75, 23);
+            this.btnGo.Size = new System.Drawing.Size(75, 40);
             this.btnGo.TabIndex = 4;
             this.btnGo.Text = "GO";
-            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.UseVisualStyleBackColor = false;
             this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // MainMenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 554);
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.cmbServices);
